@@ -67,36 +67,30 @@ public class AddStudentViewModel {
 				switch(choice) {
 				
 				case 1:  System.out.println("Enter the name: ");
-				          String newName=in.nextLine();
-				          student.setName(newName);
+				         String newName=in.nextLine();
+				         student.setName(newName);
 				         break;
 				         
-				case 2:	System.out.println("Enter the DOB: ");
+				case 2:	 System.out.println("Enter the DOB: ");
 				         String newDOB=in.nextLine();
 				         student.setDOB( newDOB);
-			             break;
+			                 break;
 			             
-				case 3: 	System.out.println("Enter the MobileNo: ");
-				           String newMobileNo=in.nextLine();
-                            student.setMobileno(newMobileNo);
-                            break;
+				case 3:   System.out.println("Enter the MobileNo: ");
+				          String newMobileNo=in.nextLine();
+                                          student.setMobileno(newMobileNo);
+                                         break;
+						
 				case 4:	System.out.println("Enter the email: ");
 				        String newEmail=in.nextLine();
-
-						student.setEmail(newEmail);
-						break;
+				        student.setEmail(newEmail);
+					break;
 				
-	                default:
-	                    System.out.println("Invalid choice.");
-	                    break;
-					
-						
-				       
-			
+	                      default: System.out.println("Invalid choice.");
+	                                break;
 				}
 					
 					
-				//SchoolBookPannelRepository.getInstanse().updateStudent(student);
 				System.out.println("Student details updated successfully.");
 				break;
 			}
@@ -129,7 +123,7 @@ public class AddStudentViewModel {
 	        System.out.println("Student not found.");
 	    }
 
-	    // Update the repository with the modified list of students
+	  
 	    SchoolBookPannelRepository.getInstanse().setStudents(students);
 	}
 
@@ -142,11 +136,8 @@ public class AddStudentViewModel {
 
 
 	      
-//	    
-//	 public void getusername() {
-//		 List<String> viewname = SchoolBookPannelRepository.getInstanse().viewname();
-//		 this.addStudent.getViewInfo(viewname);
-//	 }
+
+
 
 
 
