@@ -22,15 +22,15 @@ public class SchoolBookPannel {
 		Scanner in=new Scanner(System.in);
 		int choice=in.nextInt();
 		switch(choice) {
-		case 1:
-			    adminfun();
-			    break;
-		case 2:
-		       userfun();
-		       break;
-		case 3:
-			System.out.println("Goodboy Have a nice day!");
-			break;
+				
+		case 1:  adminfun();
+			 break;
+				
+		case 2:  userfun();
+		         break;
+				
+		case 3:  System.out.println("Goodboy Have a nice day!");
+			 break;
 		}
 	}
 
@@ -47,33 +47,21 @@ public class SchoolBookPannel {
 			
 		int choice=in.nextInt();
 		switch(choice) {
-		case 1:
-			  student1.nam();
-			  break;
-		case 2:
-			student1.viewUsers() ;
-			break;
+		case 1:  student1.nam();
+			 break;
+		case 2:  student1.viewUsers() ;
+			 break;
 			
-		case 3:
-			student1.updateUsers() ;
-			break;
-			
-			
-		case 4:
-			student1.deleteUsers() ;
-			break;
-			
-		case 5:
-			System.out.println("back to admin and user!");
-			schoolbookpannel.init();
-			running=false;
-			break;
-			
-		default:
-            System.out.println("Invalid choice.");
-            break;
-			
-			
+		case 3:  student1.updateUsers() ;
+			 break;
+		case 4:  student1.deleteUsers() ;
+			 break;
+		case 5:  System.out.println("back to admin and user!");
+			 schoolbookpannel.init();
+			 running=false;
+			 break;
+		default: System.out.println("Invalid choice.");
+			 break;	
 		}
 	}
 	}
